@@ -1,0 +1,56 @@
+1. What goal will your website be designed to achieve?
+
+- The goal of my website is for users to be able to create an account using their 
+first name, birthdate, a username, and a password. Once logged in, they can begin 
+a modified version of the word game Wordle. This version of Wordle will allow a user to 
+have an opportunity to either select from a list of topics/themes, play a randomly selected 
+topic/theme, or remove the filter completely to play a general word game. Once the START button 
+is clicked, the timer will begin and the user will get 5 chances to solve a 5 letter word.
+When a corect letter is in the correct spot, it will stay shown letter side up and turn a 
+different color(possiblly green). If the letter is in the word, but in a different spot, it 
+will also stay letter side up, but be a different color(possibly red). Once the user has exhausted 
+all 5 guesses, the word along with the definition will be shown. 
+
+
+2. What kind of users will visit your site? In other words, what is the demographic of
+your users?
+
+- This game can be for all people. I will be programming it so the "offensive" 
+boolean is False as to not allow innapropriate words. But possibly create
+an "Adult" setting that will only be an option if your 18+.
+
+
+3. What data do you plan on using? You may have not picked your actual API yet,
+which is fine, just outline what kind of data you would like it to contain.
+
+- I plan on using the Merriam-Webster API. The "id" for the word, "syns" to access synonyms, 
+"offensive" to toggle offensive words on/off, "shortdef" for the definition.
+
+
+4. In brief, outline your approach to creating your project (knowing that you may not
+know everything in advance and that these details might change later). Answer
+questions like the ones below, but feel free to add more information:
+
+a. What does your database schema look like?
+- User table - id:__, name:__, birthdate:__, username:__, password:__, 
+- Word table - word:__, synonym:__, definition:__, 
+- Game table - score:__, timer:__, word:__, attempts:__, guessed_letters_greeen:__, guessed_letters_red:__,     
+- Score table - top_score:__, fastest_time:__, 
+
+b. What kinds of issues might you run into with your API?
+- Filtering words
+
+c. Is there any sensitive information you need to secure?
+- The password.
+
+d. What functionality will your app include?
+- Creating an account, generating 5 letter words, displaying the definintion,
+tracking points, length of game, games won, fastest days, saving favorite topics/themes.
+
+e. What will the user flow look like?
+- Creating an account of logging in, clicking on START to begin, having 5 cahnces to guess a 5 letter word, 
+have the option to save the theme, and/or begin another game.
+
+f. What features make your site more than CRUD? Do you have any stretch
+goals?
+- A stretch goal for me is the feature to allow the user to pick theme words. 
